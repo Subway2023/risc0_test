@@ -1,0 +1,12 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+methods = { path = "../methods" }
+risc0-zkvm = { version = "1.2.0" ,features = ["prove"]}
+# risc0-zkvm = { path = "/mnt/sdd1/sbw/zkvm/risc0-zkvm-1.2.0" }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+serde = "1.0"
+anyhow = { version = "1.0", default-features = false }
