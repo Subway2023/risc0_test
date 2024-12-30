@@ -6,7 +6,10 @@ edition = "2021"
 [dependencies]
 methods = { path = "../methods" }
 risc0-zkvm = { version = "1.2.0" ,features = ["prove"]}
-# risc0-zkvm = { path = "/mnt/sdd1/sbw/zkvm/risc0-zkvm-1.2.0" }
+# risc0-zkvm = { path = "/mnt/sdd1/sbw/zkvm/risc0-zkvm-1.2.0",features = ["prove"] }
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 serde = "1.0"
 anyhow = { version = "1.0", default-features = false }
+sp1-sdk = "3.0.0"
+chrono = "0.4"        # 用于时间操作的库
+csv = "1.1"           # 用于处理CSV的库
